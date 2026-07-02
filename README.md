@@ -12,7 +12,7 @@ AG Checker is a lightweight, zero-install portable Windows application designed 
 
 ## Key Features
 
-*   **Zero-Installation Portable Executable**: Runs instantly as a single `AG-Checker.exe` file.
+*   **Zero-Installation Portable Executable**: Runs instantly as a single `AG_Checker-vX.X.X.exe` file.
 *   **Multi-Account Monitoring**: Easily link multiple Google Antigravity accounts and see their quota status side-by-side.
 *   **Instant Google Import**: Authenticate safely using Google OAuth directly in your browser.
 *   **First-Run Auto-Import**: Scans your local directory for credentials automatically on the first launch so you can get started in one click.
