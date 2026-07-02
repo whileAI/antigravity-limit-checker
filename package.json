@@ -1,0 +1,35 @@
+{
+  "name": "ar-checker",
+  "version": "1.0.0",
+  "description": "Antigravity Quota and Cooldown Monitor",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "keywords": [],
+  "author": "Antigravity User",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^30.0.9",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.antigravity.quota.monitor",
+    "productName": "AG Checker",
+    "win": {
+      "target": "portable"
+    },
+    "portable": {
+      "artifactName": "AG-Checker.exe"
+    },
+    "files": [
+      "main.js",
+      "preload.js",
+      "index.html",
+      "index.css",
+      "renderer.js",
+      "DepartureMono-Regular.otf"
+    ]
+  }
+}

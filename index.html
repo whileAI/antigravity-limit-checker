@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Antigravity Limit Checker</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header Dashboard -->
+    <header class="app-header">
+      <div class="header-left">
+        <div class="logo">
+          <h1>Antigravity Limit Checker</h1>
+        </div>
+        <p class="subtitle">Antigravity Quota Monitor</p>
+      </div>
+      <div class="header-actions">
+        <button id="btn-login" class="btn btn-primary">
+          [Google Import]
+        </button>
+      </div>
+    </header>
+
+    <!-- Search Input (Pixel style) -->
+    <div class="search-container">
+      <input type="text" id="search-input" class="form-input search-input" placeholder="Search accounts by name or email..." autocomplete="off">
+    </div>
+
+    <!-- Stats Bar -->
+    <section class="stats-bar">
+      <div class="stat-card">
+        <span class="stat-label">TOTAL ACCOUNTS</span>
+        <span id="stat-total" class="stat-value">0</span>
+      </div>
+      <div class="stat-card cooldown">
+        <span class="stat-label">ON COOLDOWN (KD)</span>
+        <span id="stat-cooldown" class="stat-value">0</span>
+      </div>
+      <div class="stat-card ready">
+        <span class="stat-label">READY</span>
+        <span id="stat-ready" class="stat-value">0</span>
+      </div>
+    </section>
+
+    <!-- Controls Row (Sort & Refresh) -->
+    <div class="controls-row">
+      <div class="sort-control">
+        <span class="sort-label">SORT BY:</span>
+        <div class="custom-dropdown" id="sort-dropdown">
+          <div class="dropdown-trigger" id="sort-trigger">STATUS (READY FIRST)</div>
+          <div class="dropdown-menu" id="sort-menu">
+            <div class="dropdown-item active" data-sort="status">STATUS (READY FIRST)</div>
+            <div class="dropdown-item" data-sort="name">NAME</div>
+            <div class="dropdown-item" data-sort="gemini-weekly">GEMINI WEEKLY</div>
+            <div class="dropdown-item" data-sort="gemini-5h">GEMINI 5H</div>
+            <div class="dropdown-item" data-sort="claude-weekly">CLAUDE WEEKLY</div>
+            <div class="dropdown-item" data-sort="claude-5h">CLAUDE 5H</div>
+          </div>
+        </div>
+      </div>
+      <button id="btn-refresh-all" class="btn btn-outline">
+        [Refresh All]
+      </button>
+    </div>
+
+    <!-- Main Grid of Accounts -->
+    <main id="accounts-grid" class="accounts-grid">
+      <div class="no-accounts">
+        <h3>NO CONNECTED ACCOUNTS</h3>
+        <p>Click Google Import to link your accounts and begin.</p>
+      </div>
+    </main>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast"></div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
