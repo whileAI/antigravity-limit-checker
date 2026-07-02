@@ -1,8 +1,8 @@
 # AG Checker
 
-**Just a portable .exe where you add your Google accounts and monitor your Gemini & Claude usage limits.**
+**Just a portable .exe where you add your Google accounts and monitor your Antigravity usage limits.**
 
-AG Checker is a lightweight, zero-install portable Windows application designed to monitor usage quotas, limits, and cooldowns for Gemini and Claude models across multiple Google Antigravity accounts.
+AG Checker is a lightweight, zero-install portable Windows application designed to monitor usage quotas, limits, and cooldowns for Antigravity models across multiple Google Antigravity accounts.
 
 ![Electron](https://img.shields.io/badge/electron-v30.5.1-blueviolet.svg)
 ![Design](https://img.shields.io/badge/design-OLED%20Black-black.svg)
