@@ -225,8 +225,7 @@ async function runAutoImport() {
   const homedir = osHomedir();
   if (homedir) {
     const paths = [
-      path.join(homedir, '.gemini', 'oauth_creds.json'),
-      path.join(homedir, '.qwen', 'oauth_creds.json')
+      path.join(homedir, '.antigravity', 'oauth_creds.json')
     ];
     for (const p of paths) {
       try {
